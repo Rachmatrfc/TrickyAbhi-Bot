@@ -30,6 +30,7 @@ from Yone import (
     PORT,
     URL,
     TOKEN,
+    PHOTO,
     telethn,
     updater)
 
@@ -208,6 +209,7 @@ def start(update: Update, context: CallbackContext):
                 
                 ])
             message.reply_photo(
+                        PHOTO,
                         caption=(text),
                         reply_markup=keyboard,
                         parse_mode=ParseMode.HTML,
